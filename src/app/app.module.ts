@@ -1,16 +1,26 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
+
+
 import { AppComponent } from './app.component';
+import { ProductosComponent } from './productos/productos.component';
+import { FormularioProductosComponent } from './productos/formulario-productos/formulario-productos.component';
+import { Ng2IziToastModule } from 'ng2-izitoast';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductosComponent,
+    FormularioProductosComponent
   ],
   imports: [
+    
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    ReactiveFormsModule,
+    Ng2IziToastModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
